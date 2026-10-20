@@ -4,607 +4,383 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Portfólio</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons (opcional) -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Custom CSS (depois do Bootstrap para sobrescrever) -->
+  <meta name="description" content="Portfólio de stickers e logos das marcas redglory1904 e RecPortugal.">
+  <title>Portfólio de Designs | AbreuStudio</title>
+  <link rel="icon" type="image/png" href="Images/AS.png">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navegação principal">
+      <a class="logo" href="#inicio" aria-label="Página inicial">
+        <img src="Images/AS.png" alt="Logótipo">
+      </a>
 
-  <!-- Canvas para estrelas animadas -->
-  <canvas id="starsCanvas"></canvas>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle">
+      <label class="menu-button" for="nav-toggle" aria-label="Abrir ou fechar menu">
+        <span></span><span></span><span></span>
+      </label>
 
-  <!-- Cabeçalho com logo e menu -->
-  <header>
-    <div class="container header-container">
-      <div class="logo">
-        <img src="images/LogoTransparente.png" alt="Logotipo da Marca">
+      <div class="nav-links">
+        <a class="nav-contact" href="#contacto">Contacto</a>
       </div>
-      <nav class="d-flex flex-wrap justify-content-center gap-2 gap-md-3">
-        <a href="#about">Sobre</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contactos</a>
-      </nav>
-    </div>
+    </nav>
   </header>
 
-  <!-- Sobre mim -->
-  <section id="about">
-    <div class="container">
-      <div class="about-intro">
-        <p>A designXflow nasceu da paixão pelo design e da
-          vontade de transformar ideias em algo visual, criativo e impactante.</p>
-      </div>
+  <main id="inicio">
+    <section class="hero">
+      <p class="eyebrow">PORTFÓLIO DE DESIGN</p>
+      <h1>Ideias com <span>identidade.</span></h1>
+      <p>Stickers e logos originais para marcas com personalidade.</p>
+      <a class="button button-light" href="#redglory1904">
+        Explorar designs <span aria-hidden="true">↓</span>
+      </a>
+    </section>
 
-      <div class="row g-4 about-content">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="about-card h-100">
-            <h3>Quem Somos</h3>
-            <p>Somos uma equipa dedicada a criar designs personalizados, pensados à medida de cada cliente.
-              Cada projeto nasce de uma ideia ou visão única, e o nosso trabalho é transformá-la em realidade.</p>
-          </div>
+    <section class="brand-section redglory" id="redglory1904">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">MARCA 01</p>
+          <h2>Designs <span>redglory1904</span></h2>
         </div>
+        <p>Stickers e logos com uma identidade urbana, intensa e original.</p>
+      </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="about-card h-100">
-            <h3>Como Trabalhamos</h3>
-            <p>Na designXflow, o processo é simples e colaborativo: partilhas a tua ideia e
-              nós transformamo-la num design atual, criativo e pensado ao detalhe, sempre adaptado a cada projeto.</p>
+      <div class="product-filters" aria-label="Filtrar designs redglory1904">
+        <button class="filter-button active" type="button" data-filter="all">Todos</button>
+        <button class="filter-button" type="button" data-filter="sticker">Stickers</button>
+        <button class="filter-button" type="button" data-filter="logo">Logos</button>
+        <button class="filter-button" type="button" data-filter="conteudo">Conteúdo</button>
+      </div>
+
+      <div class="product-grid">
+        <!-- Dentro do product-grid de redglory1904, depois da primeira card -->
+        <article class="product-card" data-category="sticker">
+          <img src="Images/estadio.png" alt="Sticker redglory1904 02">
+          <div class="product-info">
+            <h3>Sticker Red Glory 01</h3><span>STICKER</span>
           </div>
+        </article>
+
+        <article class="product-card" data-category="sticker">
+          <img src="Images/geracao.png" alt="Sticker redglory1904 03">
+          <div class="product-info">
+            <h3>Sticker Red Glory 02</h3><span>STICKER</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="sticker">
+          <img src="Images/honrar.png" alt="Sticker redglory1904 04">
+          <div class="product-info">
+            <h3>Sticker Red Glory 03</h3><span>STICKER</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="sticker">
+          <img src="Images/DebaixoAgua.png" alt="Sticker redglory1904 05">
+          <div class="product-info">
+            <h3>Sticker Red Glory 04</h3><span>STICKER</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="CONTEÚDO">
+          <img src="Images/JuventusVSBenfica.png" alt="Sticker redglory1904 06">
+          <div class="product-info">
+            <h3>Conteúdo Red Glory 01</h3><span>CONTEÚDO</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="sticker">
+          <img src="Images/MundoAcaba.png" alt="Sticker redglory1904 07">
+          <div class="product-info">
+            <h3>Sticker Red Glory 06</h3><span>STICKER</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="sticker">
+          <img src="Images/nortesul.png" alt="Sticker redglory1904 08">
+          <div class="product-info">
+            <h3>Sticker Red Glory 07</h3><span>STICKER</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="sticker">
+          <img src="Images/pyro.png" alt="Sticker redglory1904 09">
+          <div class="product-info">
+            <h3>Sticker Red Glory 08</h3><span>STICKER</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="sticker">
+          <img src="Images/raca.png" alt="Sticker redglory1904 10">
+          <div class="product-info">
+            <h3>Sticker Red Glory 09</h3><span>STICKER</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="Sticker">
+          <img src="Images/SempreCantar.png" alt="Sticker redglory1904 11">
+          <div class="product-info">
+            <h3>Sticker Red Glory 10</h3>
+            <span>STICKER</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="logo">
+          <img src="Images/LogoRedglory.png" alt="Logo Red Glory 01">
+          <div class="product-info">
+            <h3>Logo Red Glory 01</h3><span>LOGO</span>
+          </div>
+        </article>
+      </div>
+
+      <button class="button button-dark load-more" type="button" hidden>
+        Ver mais designs
+      </button>
+    </section>
+
+    <section class="brand-section recportugal" id="recportugal">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">MARCA 02</p>
+          <h2>Designs <span>RecPortugal</span></h2>
         </div>
+        <p>Stickers e logos inspirados na cultura e identidade portuguesa.</p>
+      </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="about-card h-100">
-            <h3>O Que Fazemos</h3>
-            <p>Desenvolvemos projetos de design gráfico, identidade visual, logótipos e
-              conteúdos para redes sociais, ajudando marcas e pessoas a comunicar melhor através do design.</p>
+      <div class="product-filters" aria-label="Filtrar designs RecPortugal">
+        <button class="filter-button active" type="button" data-filter="all">Todos</button>
+        <button class="filter-button" type="button" data-filter="sticker">Stickers</button>
+        <button class="filter-button" type="button" data-filter="logo">Logos</button>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card" data-category="sticker">
+          <img src="Images/OrgulhoPortugues.png" alt="Sticker Orgulho Português">
+          <div class="product-info">
+            <h3>Sticker RecPortugal 01</h3><span>STICKER</span>
           </div>
+        </article>
+
+        <article class="product-card" data-category="sticker">
+          <img src="Images/ReerguerPortugal.png" alt="Sticker Reerguer Portugal">
+          <div class="product-info">
+            <h3>Sticker RecPortugal 02</h3><span>STICKER</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="logo">
+          <img src="Images/REC.PORTUGAL.png" alt="Logo RecPortugal 03">
+          <div class="product-info">
+            <h3>Logo RecPortugal 01</h3><span>LOGO</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="sticker">
+          <img src="Images/PortugalAosPortugueses (2).png" alt="Sticker RecPortugal 04">
+          <div class="product-info">
+            <h3>Sticker RecPortugal 03</h3><span>STICKER</span>
+          </div>
+        </article>
+
+        <button class="button button-dark load-more" type="button" hidden>
+          Ver mais designs
+        </button>
+    </section>
+
+    <section class="brand-section diversos" id="diversos">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">MARCA 03</p>
+          <h2>Designs <span>Diversos</span></h2>
         </div>
+        <p>Uma coleção de stickers, logos e outros designs.</p>
       </div>
 
-      <div class="about-full">
-        <p class="reveal-text">Este site reúne também o nosso portfólio, onde podes ver alguns dos projetos que já
-          desenvolvemos.
-          Os projetos apresentados estão em constante atualização, com novos trabalhos a serem adicionados
-          regularmente. Todos os designs contêm marca de água, garantindo a proteção dos trabalhos e
-          evitando qualquer uso indevido.</p>
-        <p class="reveal-text">Mais do que criar visuais, queremos criar uma boa experiência, onde há comunicação,
-          confiança e
-          flow entre quem idealiza e quem cria.</p>
-        <p class="reveal-text">Para orçamentos, informações mais específicas ou pedidos personalizados, disponibilizamos
-          o
-          nosso email e Instagram na área de contactos. Estamos sempre disponíveis para falar contigo e dar
-          início ao teu projeto.</p>
+      <div class="product-filters" aria-label="Filtrar designs diversos">
+        <button class="filter-button active" type="button" data-filter="all">Todos</button>
+        <button class="filter-button" type="button" data-filter="sticker">Stickers</button>
+        <button class="filter-button" type="button" data-filter="logo">Logos</button>
+        <button class="filter-button" type="button" data-filter="conteudo">Conteúdo</button>
       </div>
 
-      <div class="about-tagline">
-        <p><strong>designXflow - Ideias tuas. Design nosso.</strong></p>
-      </div>
-    </div>
-  </section>
+      <div class="product-grid">
+        <article class="product-card" data-category="sticker">
+          <img src="Images/Estrela.png" alt="Sticker diverso">
+          <div class="product-info">
+            <h3>Sticker Diverso 01</h3>
+            <span>STICKER</span>
+          </div>
+        </article>
 
-  <!-- Galeria de projetos -->
-  <section id="portfolio">
-    <div class="container">
-      <h2>Portfolio</h2>
-        <div class="gallery-masonry">
-          <div class="project-card">
-            <img src="Images/ClassificaçãoAtual.png" alt="Classificação Liga Betclic 2026" class="gallery-img">
-            <div class="overlay">
-              <p>Classificação Liga Betclic 2026</p>
-            </div>
+        <article class="product-card" data-category="logo">
+          <img src="Images/LuisSuarez1.png" alt="Logo diverso">
+          <div class="product-info">
+            <h3>Logo Diverso 01</h3>
+            <span>CONTEÚDO</span>
           </div>
-          <div class="project-card">
-            <img src="Images/Sticker1.png" alt="Autocolante Sport Lisboa e Benfica" class="gallery-img">
-            <div class="overlay">
-              <p>Autocolante Sport <br> Lisboa e Benfica</p>
-            </div>
+        </article>
+
+        <article class="product-card" data-category="conteudo">
+          <img src="Images/Ronaldo960.png" alt="Design de conteúdo diverso">
+          <div class="product-info">
+            <h3>Conteúdo Diverso 01</h3>
+            <span>CONTEÚDO</span>
           </div>
-          <div class="project-card">
-            <img src="Images/LuisSuarez1.png" alt="Sporting VS PSG" class="gallery-img">
-            <div class="overlay">
-              <p>Sporting VS PSG</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="Images/Sticker2.png" alt="Autocolante Sport Lisboa e Benfica" class="gallery-img">
-            <div class="overlay">
-              <p>Autocolante Sport <br> Lisboa e Benfica</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="Images/JuventusVSBenfica.png" alt="Matchday Juventus VS Benfica" class="gallery-img">
-            <div class="overlay">
-              <p>Matchday Juventus VS Benfica</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="Images/Ronaldo960.png" alt="960 golos CR7" class="gallery-img">
-            <div class="overlay">
-              <p>960 golos CR7</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="Images/XIbenfica.png" alt="XI Benfica VS Juventus" class="gallery-img">
-            <div class="overlay">
-              <p>XI Benfica VS Juventus</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="Images/UFCI.png" alt="Bandeira UFCI" class="gallery-img">
-            <div class="overlay">
-              <p>Bandeira UFCI</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="Images/Ases.png" alt="Bandeira UFCI" class="gallery-img">
-            <div class="overlay">
-              <p>Honrai os Ases</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="Images/Epluribusunum.png" alt="E Pluribus Unum" class="gallery-img">
-            <div class="overlay">
-              <p>E Pluribus Unum</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="Images/Loucos.png" alt="Bandeira Pai e filho" class="gallery-img">
-            <div class="overlay">
-              <p>Bandeira Pai e filho</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="Images/Estrela.png" alt="Bandeira Estrela da Amadora" class="gallery-img">
-            <div class="overlay">
-              <p>Bandeira Estrela da Amadora</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="Images/PlznVsPorto.jpg" alt="Viktoria Plzeň VS FC Porto" class="gallery-img">
-            <div class="overlay">
-              <p>Viktoria Plzen VS FC Porto</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="Images/BandeiraTopoSul.png" alt="Design Para Bandeira Personalizada á medida do cliente" class="gallery-img">
-            <div class="overlay">
-              <p>Design Para Bandeira Personalizada <br> á medida do cliente</p>
-            </div>
-          </div>
-          <!-- Novo Projeto 1 -->
-          <div class="project-card">
-            <img src="Images/AutocolantesSCP1.png" alt="Autocolantes Sporting Clube de Portugal" class="gallery-img">
-            <div class="overlay">
-              <p>Autocolantes Sporting Clube de Portugal</p>
-            </div>
-          </div>
-          <!-- Novo Projeto 2 -->
-          <div class="project-card">
-            <img src="Images/AutocolantesSCP2.png" alt="Autocolantes Sporting Clube de Portugal" class="gallery-img">
-            <div class="overlay">
-              <p>Autocolantes Sporting Clube de Portugal</p>
-            </div>
-          </div>
-        </div>
+        </article>
       </div>
 
+      <button class="button button-dark load-more" type="button" hidden>
+        Ver mais designs
+      </button>
+    </section>
 
-  <!-- Modal para ampliação de imagens -->
-  <div id="imageModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modalImage">
-  </div>
-
-  <!-- Contato -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contactos</h2>
-      <div class="contact-icons">
-        <a href="mailto:designxflow@gmail.com" title="Email" class="icon-link">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-          </svg>
+    <section class="contact-section" id="contacto">
+      <div class="contact-copy">
+        <p class="eyebrow">VAMOS CRIAR?</p>
+        <h2>Contacto e<br>encomendas.</h2>
+        <p>Envia uma mensagem para pedir informações, encomendar ou solicitar um orçamento.</p>
+        <a class="email-link" href="mailto:abreustudio06@gmail.com">
+          abreustudio06@gmail.com
         </a>
-        <a href="https://www.instagram.com/designx.flow/" target="_blank" title="Instagram" class="icon-link">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37"></path>
-            <circle cx="17.5" cy="6.5" r="1.5"></circle>
-          </svg>
-        </a>
       </div>
-    </div>
-  </section>
 
-  <!-- Rodapé -->
-  <footer>
-    <p>© 2026 designXflow. Todos os direitos reservados.</p>
+      <form class="contact-form" action="mailto:abreustudio06@gmail.com" method="post" enctype="text/plain">
+        <label for="nome">Nome</label>
+        <input id="nome" name="Nome" type="text" placeholder="O teu nome" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="Email" type="email" placeholder="nome@email.com" required>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="Mensagem" rows="4" placeholder="Conta-nos o que procuras..." required></textarea>
+
+        <button class="button button-dark" type="submit">
+          Enviar pedido <span aria-hidden="true">↗</span>
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 AbreuStudio. Todos os direitos reservados.</p>
+    <a href="#inicio">Voltar ao topo ↑</a>
   </footer>
 
-  <!-- 
-       SCRIPTS JAVASCRIPT
-       Todo o código que torna o site interativo
-       DOMContentLoaded = espera a página carregar antes de executar
-      -->
+  <dialog class="image-lightbox" id="image-lightbox" aria-label="Imagem ampliada">
+    <button class="lightbox-close" type="button" aria-label="Fechar imagem">×</button>
+    <img class="lightbox-image" src="" alt="">
+    <p class="lightbox-caption"></p>
+  </dialog>
+
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll(".brand-section").forEach((section) => {
+      const grid = section.querySelector(".product-grid");
+      const cards = [...grid.querySelectorAll(".product-card")];
+      const filters = section.querySelectorAll(".filter-button");
+      const moreButton = section.querySelector(".load-more");
+      const emptyMessage = document.createElement("p");
 
-      /* 
-         ANIMAÇÕES DE SCROLL (Intersection Observer)
-         
-         O Intersection Observer "observa" elementos e detecta
-         quando eles entram ou saem da área visível do ecrã.
-         Quando um elemento entra na vista, adicionamos a classe
-         'animated' que ativa a animação CSS.
-         */
+      emptyMessage.className = "empty-state";
+      emptyMessage.textContent = "Sem designs";
+      emptyMessage.hidden = true;
+      emptyMessage.setAttribute("aria-live", "polite");
+      grid.insertAdjacentElement("afterend", emptyMessage);
 
-      // Configurações do Observer:
-      const observerOptions = {
-        threshold: 0.1,                   // 0.1 = ativa quando 10% do elemento está visível
-        rootMargin: '0px 0px -50px 0px'   // Margem de ativação (ativa 50px antes do fundo)
-      };
+      const limit = 6;
+      let selected = "all";
+      let expanded = false;
 
-      // Criar o Observer - esta função é chamada sempre que um elemento entra/sai da vista
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          // entry.isIntersecting = true quando o elemento está visível
-          if (entry.isIntersecting) {
-            // Adicionar classe 'animated' ao elemento (ativa a animação CSS)
-            entry.target.classList.add('animated');
-
-            // Se o elemento tiver filhos com classe 'stagger-child',
-            // animá-los um a um com delay de 100ms entre cada
-            const children = entry.target.querySelectorAll('.stagger-child');
-            children.forEach((child, index) => {
-              setTimeout(() => {
-                child.classList.add('animated');
-              }, index * 100);            // index * 100ms = 0ms, 100ms, 200ms, etc.
-            });
-          }
+      function updateCards() {
+        const matchingCards = cards.filter((card) => {
+          const category = (card.dataset.category || "").toLowerCase();
+          return selected === "all" || category === selected;
         });
-      }, observerOptions);
 
-      // Selecionar todos os elementos que queremos animar e adicioná-los ao Observer
-      document.querySelectorAll('.about-intro, .about-card, .about-full, .about-tagline, .project-card, .contact-icons, section h2').forEach(el => {
-        el.classList.add('animate-on-scroll');  // Adiciona classe inicial (elemento invisível)
-        observer.observe(el);                    // Começa a "observar" este elemento
-      });
+        cards.forEach((card) => {
+          const index = matchingCards.indexOf(card);
+          card.classList.toggle(
+            "is-hidden",
+            index === -1 || (!expanded && index >= limit)
+          );
+        });
 
-      /* ANIMAÇÃO STAGGERED (em cascata)
-         Cada card aparece com um pequeno delay em relação ao anterior
-         Cria um efeito de "onda" quando os elementos aparecem */
-      document.querySelectorAll('.project-card').forEach((card, index) => {
-        card.style.transitionDelay = `${index * 0.1}s`;  // 0s, 0.1s, 0.2s, 0.3s...
-      });
+        emptyMessage.hidden = matchingCards.length > 0;
+        moreButton.hidden = matchingCards.length <= limit;
+        moreButton.textContent = expanded ? "Mostrar menos" : "Ver mais designs";
+      }
 
-      document.querySelectorAll('.about-card').forEach((card, index) => {
-        card.style.transitionDelay = `${index * 0.15}s`; // 0s, 0.15s, 0.3s...
-      });
+      filters.forEach((button) => {
+        button.addEventListener("click", () => {
+          selected = button.dataset.filter.toLowerCase();
+          expanded = false;
 
-      /* 
-         EFEITO PARALLAX NO SCROLL
-         
-         Parallax = o fundo move-se a uma velocidade diferente do conteúdo
-         Cria uma sensação de profundidade 3D
-         
-         requestAnimationFrame = otimiza performance,
-         só atualiza quando o browser está pronto para desenhar
-         */
-      let ticking = false;                // Flag para evitar demasiadas atualizações
-      window.addEventListener('scroll', function () {
-        if (!ticking) {
-          window.requestAnimationFrame(function () {
-            const scrolled = window.pageYOffset;          // Quantos pixels já fizemos scroll
-            const parallaxElements = document.querySelectorAll('.about-tagline');
-            parallaxElements.forEach(el => {
-              const rate = 0.1;                           // Velocidade do parallax (0.1 = lento)
-              el.style.backgroundPosition = `${scrolled * rate}% 50%`;  // Move o fundo
-            });
-            ticking = false;
+          filters.forEach((filter) => {
+            filter.classList.toggle("active", filter === button);
           });
-          ticking = true;
-        }
-      });
 
-      // Efeito de digitação na tagline
-      const tagline = document.querySelector('.about-tagline p strong');
-      if (tagline) {
-        const text = tagline.textContent;
-        tagline.textContent = '';
-        tagline.style.borderRight = '2px solid white';
-        let i = 0;
-        const typeWriter = () => {
-          if (i < text.length) {
-            tagline.textContent += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, 50);
-          } else {
-            setTimeout(() => {
-              tagline.style.borderRight = 'none';
-            }, 500);
-          }
-        };
-
-        // Observer para iniciar quando visível
-        const taglineObserver = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting && tagline.textContent === '') {
-              typeWriter();
-              taglineObserver.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.5 });
-        taglineObserver.observe(tagline.closest('.about-tagline'));
-      }
-
-      /* 
-         ANIMAÇÃO DE REVELAR TEXTO (About Full)
-         
-         Os parágrafos do about-full aparecem um a um
-         à medida que fazemos scroll até eles
-         */
-      const revealTexts = document.querySelectorAll('.reveal-text');
-
-      const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry, index) => {
-          if (entry.isIntersecting) {
-            // Delay em cascata: cada parágrafo aparece 200ms depois do anterior
-            setTimeout(() => {
-              entry.target.classList.add('revealed');  // Ativa animação de aparecer
-            }, index * 200);
-          }
-        });
-      }, {
-        threshold: 0.2,                   // Ativa quando 20% está visível
-        rootMargin: '0px 0px -50px 0px'   // Ativa 50px antes de chegar ao fundo
-      });
-
-      // Começar a observar cada parágrafo
-      revealTexts.forEach(text => {
-        revealObserver.observe(text);
-      });
-
-      /* 
-         SCROLL SUAVE PARA NAVEGAÇÃO
-         
-         Quando clicamos num link do menu (Sobre, Projetos, Contactos),
-         a página faz scroll suave até essa secção em vez de saltar
-        */
-      document.querySelectorAll('header nav a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();             // Impede o comportamento normal do link
-          const target = document.querySelector(this.getAttribute('href'));  // Encontra a secção
-          const offset = 200;             // Distância do topo (para não ficar escondido pelo header)
-          const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
-          window.scrollTo({ top: targetPosition, behavior: 'smooth' });  // Scroll suave
+          updateCards();
         });
       });
 
-      /* 
-         PROTEÇÃO DE IMAGENS
-         
-         Impede que as pessoas copiem ou guardem as imagens:
-         - contextmenu = clique direito do rato
-         - dragstart = arrastar a imagem
-         */
-      document.querySelectorAll('.gallery-img').forEach(img => {
-        img.addEventListener('contextmenu', function (e) {
-          e.preventDefault();             // Bloqueia menu do clique direito
-          return false;
-        });
-
-        img.addEventListener('dragstart', function (e) {
-          e.preventDefault();             // Bloqueia arrastar
-          return false;
-        });
+      moreButton.addEventListener("click", () => {
+        expanded = !expanded;
+        updateCards();
       });
 
-      // Mesma proteção para o logo
-      const logoImg = document.querySelector('.logo img');
-      if (logoImg) {
-        logoImg.addEventListener('contextmenu', function (e) {
-          e.preventDefault();
-          return false;
-        });
-
-        logoImg.addEventListener('dragstart', function (e) {
-          e.preventDefault();
-          return false;
-        });
-      }
-
-      // Modal para ampliação de imagens
-      const modal = document.getElementById('imageModal');
-      const modalImg = document.getElementById('modalImage');
-      const closeBtn = document.querySelector('.close');
-
-      const openModal = (imgSrc) => {
-        modal.style.display = 'block';
-        // Forçar reflow para iniciar animação
-        modal.offsetHeight;
-        setTimeout(() => {
-          modal.classList.add('active');
-        }, 10);
-        modalImg.src = imgSrc;
-      };
-
-      const closeModal = () => {
-        modal.classList.remove('active');
-        setTimeout(() => {
-          modal.style.display = 'none';
-        }, 400);
-      };
-
-      if (modal && modalImg && closeBtn) {
-        // Adicionar listener aos project-cards
-        document.querySelectorAll('.project-card').forEach(card => {
-          card.addEventListener('click', function (e) {
-            const img = this.querySelector('.gallery-img');
-            if (img) {
-              openModal(img.src);
-            }
-          });
-        });
-
-        // Desabilitar click direito e operações de cópia na imagem
-        modalImg.addEventListener('contextmenu', function (e) {
-          e.preventDefault();
-          return false;
-        });
-
-        modalImg.addEventListener('drag', function (e) {
-          e.preventDefault();
-          return false;
-        });
-
-        modalImg.addEventListener('dragstart', function (e) {
-          e.preventDefault();
-          return false;
-        });
-
-        // Desabilitar seleção na imagem
-        modalImg.addEventListener('selectstart', function (e) {
-          e.preventDefault();
-          return false;
-        });
-
-        closeBtn.addEventListener('click', closeModal);
-
-        modal.addEventListener('click', function (e) {
-          if (e.target === modal) {
-            closeModal();
-          }
-        });
-
-        // Fechar com ESC
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape') {
-            closeModal();
-          }
-        });
-      }
-
-      /* EFEITO HOVER NOS ÍCONES DE CONTACTO */
-      document.querySelectorAll('.icon-link').forEach(icon => {
-        icon.addEventListener('mouseenter', function () {
-          this.style.animation = 'pulse 0.5s ease';
-        });
-        icon.addEventListener('mouseleave', function () {
-          this.style.animation = '';
-        });
-      });
-
-      /* 
-         ESTRELAS ANIMADAS NO FUNDO (Canvas)
-         
-         Usa o elemento <canvas> para desenhar estrelas
-         que se movem e conectam entre si.
-         
-         Canvas = área de desenho onde podemos desenhar
-         formas, linhas, imagens, etc. com JavaScript
-          */
-      const canvas = document.getElementById('starsCanvas');
-      const ctx = canvas.getContext('2d');  // Contexto 2D para desenhar
-
-      // Função para ajustar o tamanho do canvas ao tamanho da janela
-      function resizeCanvas() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-      }
-      resizeCanvas();
-      window.addEventListener('resize', resizeCanvas);  // Reajustar quando a janela muda de tamanho
-
-      // Array para guardar todas as estrelas
-      const stars = [];
-      const numStars = 80;  // Número total de estrelas
-
-      // Criar 80 estrelas com propriedades aleatórias
-      for (let i = 0; i < numStars; i++) {
-        stars.push({
-          x: Math.random() * canvas.width,       // Posição X aleatória
-          y: Math.random() * canvas.height,      // Posição Y aleatória
-          size: Math.random() * 2 + 0.5,         // Tamanho entre 0.5 e 2.5 pixels
-          speedX: (Math.random() - 0.5) * 0.3,   // Velocidade horizontal (-0.15 a 0.15)
-          speedY: (Math.random() - 0.5) * 0.3,   // Velocidade vertical (-0.15 a 0.15)
-          opacity: Math.random() * 0.5 + 0.2,    // Opacidade entre 0.2 e 0.7
-          pulse: Math.random() * Math.PI * 2     // Fase inicial do efeito pulsar
-        });
-      }
-
-      // Função principal de desenho - chamada ~60 vezes por segundo
-      function drawStars() {
-        // Limpar o canvas antes de redesenhar
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-        // Desenhar cada estrela
-        stars.forEach(star => {
-          // EFEITO PULSAR - a opacidade varia com o tempo (usando seno)
-          star.pulse += 0.02;
-          const currentOpacity = star.opacity + Math.sin(star.pulse) * 0.15;
-
-          // Desenhar o centro da estrela (círculo pequeno, mais brilhante)
-          ctx.beginPath();
-          ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);  // Círculo
-          ctx.fillStyle = `rgba(201, 160, 255, ${currentOpacity})`;  // Roxo claro
-          ctx.fill();
-
-          // Desenhar o brilho à volta (círculo maior, mais transparente)
-          ctx.beginPath();
-          ctx.arc(star.x, star.y, star.size * 2, 0, Math.PI * 2);
-          ctx.fillStyle = `rgba(157, 78, 221, ${currentOpacity * 0.3})`;  // Roxo
-          ctx.fill();
-
-          // Mover a estrela (adicionar velocidade à posição)
-          star.x += star.speedX;
-          star.y += star.speedY;
-
-          // WRAP AROUND - quando sai de um lado, aparece no outro
-          if (star.x < 0) star.x = canvas.width;
-          if (star.x > canvas.width) star.x = 0;
-          if (star.y < 0) star.y = canvas.height;
-          if (star.y > canvas.height) star.y = 0;
-        });
-
-        // Desenhar linhas entre estrelas próximas (tipo constelação)
-        for (let i = 0; i < stars.length; i++) {
-          for (let j = i + 1; j < stars.length; j++) {
-            // Calcular distância entre duas estrelas (teorema de Pitágoras)
-            const dx = stars[i].x - stars[j].x;
-            const dy = stars[i].y - stars[j].y;
-            const distance = Math.sqrt(dx * dx + dy * dy);
-
-            // Se estiverem a menos de 120px de distância, desenhar linha
-            if (distance < 120) {
-              ctx.beginPath();
-              ctx.moveTo(stars[i].x, stars[i].y);  // Ponto inicial
-              ctx.lineTo(stars[j].x, stars[j].y);  // Ponto final
-              // Opacidade da linha diminui com a distância
-              ctx.strokeStyle = `rgba(157, 78, 221, ${0.15 * (1 - distance / 120)})`;
-              ctx.lineWidth = 0.5;
-              ctx.stroke();
-            }
-          }
-        }
-
-        // Chamar esta função novamente no próximo frame (cria o loop de animação)
-        requestAnimationFrame(drawStars);
-      }
-
-      // Iniciar a animação
-      drawStars();
-
+      updateCards();
     });
   </script>
-</body>
 
+  <script>
+  const lightbox = document.querySelector("#image-lightbox");
+  const lightboxImage = lightbox.querySelector(".lightbox-image");
+  const lightboxCaption = lightbox.querySelector(".lightbox-caption");
+
+  document.querySelectorAll(".product-card img").forEach((image) => {
+    image.tabIndex = 0;
+    image.setAttribute("role", "button");
+    image.setAttribute("aria-label", `Ver imagem ampliada: ${image.alt}`);
+
+    function openLightbox() {
+      lightboxImage.src = image.src;
+      lightboxImage.alt = image.alt;
+      lightboxCaption.textContent =
+        image.closest(".product-card").querySelector("h3")?.textContent || image.alt;
+      lightbox.showModal();
+    }
+
+    image.addEventListener("click", openLightbox);
+    image.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        openLightbox();
+      }
+    });
+  });
+
+  lightbox.querySelector(".lightbox-close").addEventListener("click", () => {
+    lightbox.close();
+  });
+
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) lightbox.close();
+  });
+</script>
+<script>
+  document.addEventListener("contextmenu", (event) => {
+    if (event.target.matches(".product-card img, .lightbox-image")) {
+      event.preventDefault();
+    }
+  });
+
+  document.addEventListener("dragstart", (event) => {
+    if (event.target.matches(".product-card img, .lightbox-image")) {
+      event.preventDefault();
+    }
+  });
+</script>
+
+</body>
 </html>
